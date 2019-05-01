@@ -10,7 +10,7 @@ node('linux') {
 	}
 	
 	stage('Deploy') {
-		sh 'aws s3 cp /workspace/java-pipeline/dist/rectangle-${BUILD_NUMBER}.jar s3://arn:aws:s3:::cf-templates-cxezeqmiwxzj-us-east-1'
+		sh 'aws s3 cp /workspace/java-pipeline/dist/rectangle-${BUILD_NUMBER}.jar s3://cf-templates-cxezeqmiwxzj-us-east-1'
 	}
 	
 	
